@@ -1,0 +1,18 @@
+<div>
+  <h1 mat-dialog-title>{{titleHint}}</h1>
+  <div mat-dialog-content>
+    {{descripionAccion}}
+    <span style="font-style: italic!important; color: coral;font-size: 20px">
+      *{{data.typeObject}}*
+    </span>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">CANCELAR</button>
+    <button mat-raised-button
+
+            color="primary"
+            [mat-dialog-close]="'CONF'" cdkFocusInitial>SI, {{titleHint|uppercase}}</button>
+  </div>
+
+
+</div>

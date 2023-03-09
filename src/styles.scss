@@ -1,0 +1,357 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$primary: mat-palette($mat-blue-gray, 500);
+$light-primary-text: mat-palette($mat-red, 400);
+$dark: mat-palette($mat-teal, 400);
+$accent: mat-palette($mat-red, 500);
+
+
+$white-foreground: mat-palette($mat-gray, 600);
+
+$theme: mat-light-theme($primary, $accent, $light-primary-text);
+$my-app-theme-custom: map-merge($theme,
+  (foreground: $white-foreground),
+);
+
+
+@include angular-material-theme($my-app-theme-custom);
+
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+
+  //padding-right: 0px !important;
+  //padding-left: 0px !important;
+}
+
+
+html, body {
+  height: 100vh !important;
+  //user-select: none !important;
+}
+
+.example-box:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+  0 8px 10px 1px rgba(0, 0, 0, 0.14),
+  0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.resizable {
+  overflow: scroll;
+  resize: both;
+  //border: 1px solid black;
+  min-width: 50px;
+  min-height: 50px;
+  background-color: #f8f8f8;
+}
+
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+}
+
+body {
+
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  //background-color: #fbfbfb !important;
+}
+
+body {
+  //background-color: #6e6e6e !important;
+}
+
+body::after {
+  background-color: #e50000 !important;
+}
+
+.mat-tooltip {
+  background: #9f9f9f !important;
+  font-size: 12px !important;
+}
+
+.redSemaforo {
+  color: #f44336 !important;
+}
+
+.greenSemaforo {
+  color: chartreuse !important;
+
+}
+
+.background-gradient-red {
+  /*background: rgb(255, 211, 211);*/
+  /*background: -moz-linear-gradient(90deg, rgba(213, 213, 213, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 70%, rgba(213, 213, 213, 1) 100%);*/
+  /*background: -webkit-linear-gradient(90deg, rgba(213, 213, 213, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 70%, rgba(213, 213, 213, 1) 100%);*/
+  /*background: linear-gradient(90deg, rgba(213, 213, 213, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 70%, rgba(213, 213, 213, 1) 100%);*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd3d3", endColorstr="#ffd3d3", GradientType=1);*/
+}
+
+.hide {
+  display: none !important;
+}
+
+h4 {
+  font-size: small !important;
+  margin: 0 !important;
+}
+
+.frig {
+  z-index: 99999 !important;
+  position: absolute !important;
+  right: 8px !important;
+}
+
+.frig-b {
+
+
+  right: 8px !important;
+  bottom: 16px;
+}
+
+.frig-t {
+  z-index: 99999 !important;
+  transition: 2s;
+  position: absolute !important;
+  right: 8px !important;
+  top: 8px !important;
+}
+
+.frig-bt-f {
+  z-index: 99999 !important;
+  transition: 2s;
+  position: fixed !important;
+  right: 8px !important;
+  bottom: 8px !important;
+}
+
+
+.fleft {
+  z-index: 99999 !important;
+
+  position: absolute !important;
+  left: 8px !important;
+}
+
+.fleft-t {
+  z-index: 99999 !important;
+  position: absolute !important;
+  left: 8px !important;
+  top: 8px !important;
+}
+
+
+.text-primary {
+
+  color: #008070 !important;
+}
+
+.grey-100 {
+  color: gray;
+}
+
+.grey-10 {
+  color: #cbcbcb !important;
+}
+
+.opacity05 {
+  opacity: 0.5 !important;
+}
+
+.blue-100 {
+  color: blue;
+}
+
+.red-100 {
+  color: red;
+}
+
+.yellow-100 {
+  color: yellow;
+}
+
+.green-100 {
+  color: green;
+}
+
+.leyendas-item {
+
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #d4d4d4;
+  height: 100% !important;
+  margin-bottom: 10px !important;
+
+}
+
+
+th {
+  text-align: left;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  //color: #ffffff !important;
+  //background-color: #914e4e !important;
+}
+
+.mat-tab-header, .mat-tab-nav-bar {
+  border-bottom: none !important;
+}
+
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+}
+
+.mat-button-toggle-group {
+  overflow-x: visible !important;
+}
+
+.content-left-div {
+
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.scaled09 {
+  transform: scale(0.9);
+}
+
+.scaled08 {
+  transform: scale(0.8) !important;
+}
+
+.mat-option {
+  //font-size: 11px !important;
+}
+
+
+.mat-option-text {
+  //overflow: auto !important;
+  //text-overflow: unset !important;
+}
+
+// .mat-select-panel {
+//
+//  max-width: 100%;
+//}
+:host-context(.mat-select-panel)::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+:host-context(.mat-select-panel)::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+:host-context(.mat-select-panel)::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+
+:host-context(.mat-select-panel)::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.mat-select-panel {
+  //background: #ffcfcf;
+}
+
+mat-form-field {
+  width: 100% !important;
+
+}
+
+.mat-tab-label-active {
+  box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.75);
+  background-color: #b8b8b8;
+  color: #404040;
+}
+
+
+//.mat-tab-label-active {
+//  background-color: #000;
+//  color: #fff;
+//  opacity: 1;
+//}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  //background-color: transparent !important;
+}
+
+.underline_title {
+  width: 40%;
+  left: 0;
+  position: absolute;
+  margin-left: 8px;
+  height: 4px;
+  background-color: darkred;
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.wcol-11 {
+  width: 150px !important;
+}
+
+.wcol-3 {
+  width: 120px !important;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.borde-0 {
+  border-left: 6px solid #246ceb;
+}
+
+.borde-1 {
+  border-left: 6px solid #f3b64f;
+}
+
+.borde-2 {
+  border-left: 6px solid #367852;
+}
+
+.color-1 {
+  background-color: #246ceb;
+}
+
+.color-2 {
+  background-color: #f3b64f;
+}
+
+.color-3 {
+  background-color: #367852;
+}
+.color-4 {
+  background-color: #c74747;
+}
+
+@media only screen and (max-width: 760px) {
+  /* For tablets: */
+  .col-sm-hide {
+    display: none;
+  }
+  //.col-s-1 {width: 16.66%;}
+  //.col-s-2 {width: 16.66%;}
+  //.col-s-3 {width: 25%;}
+  //.col-s-4 {width: 33.33%;}
+  //.col-s-5 {width: 41.66%;}
+  //.col-s-6 {width: 50%;}
+  //.col-s-7 {width: 58.33%;}
+  //.col-s-8 {width: 66.66%;}
+  //.col-s-9 {width: 75%;}
+  //.col-s-10 {width: 83.33%;}
+  //.col-s-11 {width: 91.66%;}
+  //.col-s-12 {width: 100%;}
+}

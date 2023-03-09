@@ -1,0 +1,36 @@
+<div class="col-12">
+  <mat-toolbar class="no-print nav-toolbar-custom mat-elevation-z4">
+    <button
+      *ngIf="isSmallScreendwidth()"
+      mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+      (click)="onClickDraweToggleListener(drawer,contentDrawer)">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <span STYLE="width: 100%!important;text-align: center"
+          id="titleNavbar"> REPORTES GERENCIAL DE LA CORTE SUPREMA</span>
+    <span class="example-spacer"></span>
+<!--    <button-->
+<!--      (click)="downloadImage()"-->
+<!--      mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">-->
+<!--      <mat-icon>share</mat-icon>-->
+<!--    </button>-->
+
+  </mat-toolbar>
+
+  <mat-drawer-container class="drawer-container" [hasBackdrop]="true" [class.hide]="!drawer.opened">
+    <mat-drawer #drawer class="drawer" mode="over">
+      <div class="row aside">
+        <div class="col-12 ">
+
+          <br>
+        </div>
+      </div>
+    </mat-drawer>
+    <mat-drawer-content #contentDrawer class="drawer-content">
+    </mat-drawer-content>
+  </mat-drawer-container>
+
+</div>
+
+
